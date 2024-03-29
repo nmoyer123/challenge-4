@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Blog</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <header> 
+        <button onclick="toggleDarkMode()">
+            <span class="fa fa-star"></span>        
+        </button>
+    </header>
+    
+    <div class="main-content">
+        <div class="circle" style="padding: 55px; border-right: 2px solid black;">
+            <p>My First Blog</p>
+        </div>
+       
+      <div class="form-container">
+        <form action="blog.html" id="blogForm" style="padding: 25px; border-left: 2px solid black;">
+                <h1>Whats on your mind?</h1>
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" required><br>
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" required></textarea><br>
+            <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
+    <script src="assets/JS/script.js"></script>
+</body>
+</html>

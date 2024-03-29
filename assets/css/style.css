@@ -1,0 +1,109 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --header-color: #f0f0f0;
+    --submit-background: #333;
+}
+
+[data-theme="dark"] {
+    --background-color: #363537;
+    --text-color: #FAFAFA;
+    --header-color: #555555;
+    --submit-background: #b6912c;
+}
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: var(--header-color);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    border-bottom: 3px solid black;
+}
+
+.star {
+    cursor: pointer;
+    color: gold;
+    position: relative;
+}
+
+.main-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    border-top: 3px solid black;
+    position: relative;
+}
+
+.circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: linear-gradient(rgb(205, 182, 54), #876813);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.circle p {
+    font-size: 35px;
+    text-shadow: #333 5px 5px;
+}
+
+.form-container {
+    align-items: center;
+    width: 45%;
+}
+
+input[type="text"],
+input[type="submit"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: var(--submit-background);
+    color: var(--background-color);
+    border: none;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+header button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: gold;
+}
+
+.fa-star {
+    font-size: 24px;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+    }
+
+    .circle, .form-container {
+        width: 100%;
+    }
+}
